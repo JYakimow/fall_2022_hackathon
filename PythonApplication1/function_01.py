@@ -1,4 +1,16 @@
-import datetime
+from datetime import datetime
+
+def temp():
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
+
+    start_time = ((int)(now.strftime("%H")) * 60) + (int)(now.strftime("%M")) #Run when "Clock in" pressed"
+    end_time = ((int)(now.strftime("%H")) * 60) + (int)(now.strftime("%M")) #Run when "Clock out" is pressed
+
+    print(start_time)
+    print("Current Time =", current_time)
+
+
 
 def resetVal():
     a = ""
@@ -6,7 +18,7 @@ def resetVal():
     return a, b
 
 
-print(datetime.now().minute())
+#print(datetime.now().minute())
 """
 class timer:
     def __init__(self):

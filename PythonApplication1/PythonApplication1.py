@@ -5,6 +5,9 @@ import tkinter as tk
 import functionality
 import frame1_gui
 import gui
+import function_01
+
+function_01.temp()
 
 def doSomething():
 	print("do something")
@@ -20,13 +23,13 @@ def main():
 	
 
 
-	gui.createWindow1()
+	#gui.createWindow1()
 	
 
 
 
 	#frame2_gui.openWindow()
-	frame1_gui.openFrame1()
+	#frame1_gui.openFrame1()
 	
 
 if __name__ == "__main__":
