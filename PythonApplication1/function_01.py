@@ -1,4 +1,14 @@
-import datetime
+from datetime import datetime
+
+def temp():
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
+
+    start_time = ((int)(now.strftime("%H")) * 60) + (int)(now.strftime("%M"))
+    print(start_time)
+    print("Current Time =", current_time)
+
+
 
 def resetVal():
     a = ""
@@ -7,7 +17,7 @@ def resetVal():
 StartTime = 0
 EndTime = 0
 
-print(datetime.now().minute())
+#print(datetime.now().minute())
 """
 class timer:
     def __init__(self):
