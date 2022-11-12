@@ -7,8 +7,7 @@ def temp():
      #Run when "Clock in" pressed"
      #Run when "Clock out" is pressed
 
-    print(start_time)
-    print("Current Time =", current_time)
+    
 
 
 
