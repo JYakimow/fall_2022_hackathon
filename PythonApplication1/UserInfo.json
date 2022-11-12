@@ -1,0 +1,12 @@
+{
+    "users": [
+        {
+            "name": "Jonh",
+            "id": 100001,
+            "clockedStatus": false,
+            "hourBreak": 1,
+            "smallBreak": 2,
+            "totalMinutes": 0
+        }
+    ]
+}
