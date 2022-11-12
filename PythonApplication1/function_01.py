@@ -32,7 +32,11 @@ def clockOut():
 
 def calculateTimeWorked(start_time, end_time):
     timeWorked = end_time - start_time
-    return timeWorked
+    timeWorkedHours = timeWorked / 60
+    timeWorkedMinutes = timeWorked % 60
+    timeWorkedHoursMinutes = [timeWorkedHours, timeWorkedMinutes]
+
+    return timeWorkedHoursMinutes
 
 def resetVal():
     start_time = 0
