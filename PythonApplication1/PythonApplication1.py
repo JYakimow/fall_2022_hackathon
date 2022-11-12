@@ -16,7 +16,7 @@ def main():
 	#frames_gui.openWindow()
 	#frames_gui.openFrame1()
 	#frames_gui.openFrame2()
-	gui.frame1()
+	#gui.frame01()
 	
 
 	if __name__ == "__main__":

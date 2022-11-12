@@ -50,7 +50,7 @@ def openFrame1():
     frame1.mainloop()
 
 def openFrame2():
-    frame2= Tk()  
+    frame2 = Tk()  
     frame2.geometry("400x250") 
     frame2.title("Frame 2")
    
