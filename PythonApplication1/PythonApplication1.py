@@ -7,8 +7,6 @@ import frame1_gui
 import gui
 import function_01
 
-function_01.temp()
-
 def doSomething():
 	print("do something")
 
@@ -29,7 +27,7 @@ def main():
 
 
 	#frame2_gui.openWindow()
-	#frame1_gui.openFrame1()
+	frame1_gui.openFrame1()
 	
 
 if __name__ == "__main__":
