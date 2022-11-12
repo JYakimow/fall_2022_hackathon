@@ -3,6 +3,9 @@ import tkinter as tk
 
 #import other files
 import functionality
+import gui
+
+window = tk.Tk()
 
 def doSomething():
 	print("do something")
@@ -14,6 +17,12 @@ def main():
 
 	functionality.functionality_hello()
 	doSomething()
+	
+
+
+	gui.workingFunction()
+	
+
 
 if __name__ == "__main__":
 	main()
