@@ -20,7 +20,7 @@ def main():
 	
 
 
-	gui.workingFunction()
+	#gui.workingFunction()
 	
 
 
