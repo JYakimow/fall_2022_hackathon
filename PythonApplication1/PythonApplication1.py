@@ -23,5 +23,5 @@ def main():
 	#frame1_gui.openFrame1()
 	
 
-if __name__ == "__main__":
-	main()
+	if __name__ == "__main__":
+		main()
