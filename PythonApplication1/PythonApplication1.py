@@ -7,17 +7,10 @@ import frame1_gui
 import gui
 import function_01
 
-def doSomething():
-	print("do something")
+
 
 def main():
-	print("hello world")
-	print("Timothy has made it into the project!")
-	print("I'm here - Rhianna")
-
 	
-	functionality.functionality_hello()
-	doSomething()
 	
 
 
