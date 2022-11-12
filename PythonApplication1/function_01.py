@@ -5,17 +5,6 @@ global current_time
 now = datetime.now()
 current_time = now.strftime("%H:%M:%S")
 
-    
-
-
-
-def resetVal():
-    a = ""
-    b = ""
-    return a, b
-
-
-
 def clockIn(ClockIn):
     global start_time
     start_time = ((int)(now.strftime("%H")) * 60) + (int)(now.strftime("%M"))
@@ -30,3 +19,7 @@ def clockOut(ClockOut):
 def calculateTimeWorked(start_time, end_time):
     timeWorked = end_time - start_time
     return timeWorked
+
+def resetVal():
+    start_time = 0
+    end_time = 0
