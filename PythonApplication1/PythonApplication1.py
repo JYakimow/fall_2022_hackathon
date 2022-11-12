@@ -3,7 +3,7 @@ import tkinter as tk
 
 #import other files
 import functionality
-import frame2_gui
+import frame1_gui
 import gui
 
 def doSomething():
@@ -26,7 +26,7 @@ def main():
 
 
 	#frame2_gui.openWindow()
-	frame2_gui.openFrame1()
+	frame1_gui.openFrame1()
 	
 
 if __name__ == "__main__":
