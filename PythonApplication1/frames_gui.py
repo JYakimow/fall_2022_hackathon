@@ -45,7 +45,8 @@ def openFrame1():
         def getLogin():
 
             if(DATA.checkCredentials((int)(E1.get(1.0, "end-1c")) ,(int)(E2.get(1.0, "end-1c")) ) == 1):
-                print(1)
+                openFrame2()
+                print("1")
             else: 
                 print(0)
 
