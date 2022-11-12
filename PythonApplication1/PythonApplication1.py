@@ -4,6 +4,7 @@ import tkinter as tk
 #import other files
 import functionality
 import frame2_gui
+import gui
 
 def doSomething():
 	print("do something")
@@ -15,6 +16,13 @@ def main():
 
 	functionality.functionality_hello()
 	doSomething()
+	
+
+
+	gui.createWindow1()
+	
+
+
 
 	#frame2_gui.openWindow()
 	frame2_gui.openFrame1()
