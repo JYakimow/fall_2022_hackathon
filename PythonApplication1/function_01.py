@@ -1,12 +1,9 @@
 from datetime import datetime
 
-def temp():
-    global now
-    now = datetime.now()
-    current_time = now.strftime("%H:%M:%S")
-
-     #Run when "Clock in" pressed"
-     #Run when "Clock out" is pressed
+global now
+global current_time
+now = datetime.now()
+current_time = now.strftime("%H:%M:%S")
 
     
 
