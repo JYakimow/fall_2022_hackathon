@@ -33,3 +33,7 @@ def clockOut():
 def calculateTimeWorked(start_time, end_time):
     timeWorked = end_time - start_time
     return timeWorked
+
+def resetVal():
+    start_time = 0
+    end_time = 0
