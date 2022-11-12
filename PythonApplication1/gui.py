@@ -22,7 +22,8 @@ def createWindow1():
         width=20,
         height=5,
         bg="white",
-        fg="black"
+        fg="black",
+        command = closeWindow
         )
     #This adds the stuff to the window, I think
     label.pack()
@@ -40,3 +41,7 @@ def createWindow1():
 
     print("This worked, at least.")
 
+def closeWindow():
+    global username
+    username = entry.get()
+    window.destroy()
