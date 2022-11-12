@@ -1,13 +1,17 @@
+import datetime
+
 def resetVal():
     a = ""
     b = ""
     return a, b
+StartTime = 0
+EndTime = 0
 
-
-class Time():
-    time.s = 0
-    time.m = 0
-    time.h = 0
+print(datetime.now().minute())
+"""
+class timer:
+    def __init__(self):
+        self.start = None
 
 
 
@@ -15,20 +19,16 @@ def clockIn(ClockIn):
     if ClockIn == True:
         return
     else:
-        import time
-        time.s = time.time()
-        time.m = time.time() // 60
-        time.h = time.time() // 3600
+        self.start = datetime.now().minute()
         ClockIn = True
-        return time.s, time.m, time.h
+        return 
 
 
 def clockOut(ClockOut):
     if ClockOut == True:
         return
     else:
-        time.s = 0
-        time.m = 0
-        time.h = 0
+        self.start = None
         ClockOut = True
         return 
+   """

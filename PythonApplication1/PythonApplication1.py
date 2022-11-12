@@ -14,7 +14,7 @@ def main():
 	print("Timothy has made it into the project!")
 	print("I'm here - Rhianna")
 
-	function_01.clockIn(False)
+	
 	functionality.functionality_hello()
 	doSomething()
 
