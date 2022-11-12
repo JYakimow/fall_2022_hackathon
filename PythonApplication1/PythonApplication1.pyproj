@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="frame1_gui.py" />
     <Compile Include="function_01.py" />
     <Compile Include="gui.py" />
     <Compile Include="functionality.py" />
