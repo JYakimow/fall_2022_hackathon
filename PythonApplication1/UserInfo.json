@@ -2,7 +2,7 @@
     "users": [
         {
             "name": "John",
-            "id": 100001,
+            "id": "100001",
             "clockedStatus": false,
             "hourBreak": 1,
             "smallBreak": 2,
@@ -10,7 +10,7 @@
         }
         {
             "name": "Bubba",
-            "id": 100002,
+            "id": "100002",
             "clockedStatus": false,
             "hourBreak": 1,
             "smallBreak": 2,
@@ -18,7 +18,7 @@
         }
         {
             "name": "Mr. Gonzales",
-            "id": 100003,
+            "id": "100003",
             "clockedStatus": false,
             "hourBreak": 1,
             "smallBreak": 2,
@@ -26,7 +26,7 @@
         }
         {
             "name": "Kali",
-            "id": 100004,
+            "id": "100004",
             "clockedStatus": false,
             "hourBreak": 1,
             "smallBreak": 2,
