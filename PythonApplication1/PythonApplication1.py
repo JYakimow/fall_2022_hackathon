@@ -5,8 +5,6 @@ import tkinter as tk
 import functionality
 import gui
 
-window = tk.Tk()
-
 def doSomething():
 	print("do something")
 
@@ -20,7 +18,7 @@ def main():
 	
 
 
-	#gui.workingFunction()
+	gui.createWindow1()
 	
 
 
