@@ -1,5 +1,8 @@
 from datetime import datetime
 
+import DATA
+
+
 global now
 global current_time
 now = datetime.now()
@@ -16,13 +19,13 @@ def resetVal():
 
 
 
-def clockIn(ClockIn):
+def clockIn():
     global start_time
     start_time = ((int)(now.strftime("%H")) * 60) + (int)(now.strftime("%M"))
     return start_time
 
 
-def clockOut(ClockOut):
+def clockOut():
     global end_time
     end_time = ((int)(now.strftime("%H")) * 60) + (int)(now.strftime("%M"))
     return end_time

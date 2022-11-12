@@ -10,14 +10,13 @@ import function_01
 
 
 def main():
-	
-	
 	#gui.createWindow1()
 
 	#gui.createWindow1()
 	#frames_gui.openWindow()
 	#frames_gui.openFrame1()
-	frames_gui.openFrame2()
+	#frames_gui.openFrame2()
+	gui.frame1()
 	
 
 	if __name__ == "__main__":
