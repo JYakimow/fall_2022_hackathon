@@ -4,8 +4,7 @@ def resetVal():
     a = ""
     b = ""
     return a, b
-StartTime = 0
-EndTime = 0
+
 
 print(datetime.now().minute())
 """
