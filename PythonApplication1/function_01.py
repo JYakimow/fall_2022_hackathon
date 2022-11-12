@@ -1,6 +1,7 @@
 from datetime import datetime
 
 def temp():
+    global now
     now = datetime.now()
     current_time = now.strftime("%H:%M:%S")
 

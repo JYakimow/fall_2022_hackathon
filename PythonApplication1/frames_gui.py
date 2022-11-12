@@ -2,6 +2,8 @@ from tkinter import *
 
 import debug
 
+import function_01
+
 #test
 def openWindow():
     # declare the window
