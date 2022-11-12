@@ -1,1 +1,3 @@
-window = tk.Tk()
+def workingFunction():
+    window = tk.Tk()
+
