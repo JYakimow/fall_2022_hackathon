@@ -1,6 +1,8 @@
 from tkinter import *
 
 import debug
+import DATA
+from tkinter import ttk
 
 import function_01
 
@@ -19,35 +21,45 @@ def openWindow():
 
 #frame1 
 def openFrame1():
-    id_var = Tk.StringVar.get()
-    in_var = Tk.StringVar()
+        top = Tk()
+        top.geometry("400x250")
+        L1 = Label(top, text="ID:")
+        L1.pack()
+        E1 = Text(top, width=20,height=1)
 
-    def login():
-        employee_id = id_var.StringVar.get()
-        employee_pin = pin_var.StringVar.get()
+        E1.insert(END, "Enter ID")
+        E1.pack()
 
-        #debug.output("Employee ID: ", employee_id)
-        #debug.output("Employee PIN: ", employee_pin)
 
-        employee_id = ""
-        employee_id = ""
+        top.geometry("700x350")
+        L2 = Label(top, text="Passcode:")
+        L2.pack()
+        E2 = Text(top, width=20,height=1)
 
-    frame1 = Tk()  
-    frame1.geometry("400x250") 
-   
-    # the label for username
-    frame1_user_id = Label(frame1, text = "Employee ID").place(x = 35, y = 60) 
-   
-    # the label for user_password 
-    frame1_user_pin = Label(frame1, text = "Pin").place(x = 80, y = 100) 
-   
-    frame1_user_name_input_area = Entry(frame1, textvariable = id_var, width = 30).place(x = 110, y = 60) 
-    frame1_user_password_entry_area = Entry(frame1, textvariable = pin_var, width = 30).place(x = 110, y = 100) 
+        E2.insert(END, "Enter Passcode")
+        E2.pack()
 
-    frame1_submit_button = Button(frame1, text = "Login", command = login()).place(x = 140, y = 130)
-    frame1_quit_button = Button(frame1, text = "Quit").place(x = 200, y = 130)
+        L3 = Label(top )
+        L3.pack()
 
-    frame1.mainloop()
+        def getLogin():
+
+            if(DATA.checkCredentials((int)(E1.get(1.0, "end-1c")) ,(int)(E2.get(1.0, "end-1c")) ) == 1):
+                print(1)
+            else: 
+                print(0)
+
+
+
+        B = ttk.Button(top, text ="Confirm", command=lambda: getLogin() )
+        B.pack( ipadx=10, ipady = 5)
+        B.place(relx=.44, rely=.3, anchor="center")
+
+        QuitButton = ttk.Button(top, text ="Quit", command=top.destroy)
+        QuitButton.pack( ipadx=10, ipady = 5 )
+        QuitButton.place(relx=.56, rely=.3, anchor="center")
+
+        top.mainloop()
 
 def openFrame2():
     frame2 = Tk()  

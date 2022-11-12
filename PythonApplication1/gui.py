@@ -1,4 +1,4 @@
-from tkinter import *
+"""from tkinter import *
 
 from tkinter import ttk
 
@@ -48,9 +48,9 @@ class frame1():
 
 
 
-        top.mainloop()
+        top.mainloop()"""
 
-
+"""
 class frame2():
     frame2 = Tk()  
     frame2.geometry("400x250") 
@@ -74,3 +74,4 @@ class frame2():
     frame2_15min_break_button = Button(frame2, text = "15 Minute \n Break", height= 4, width=10).place(x = 200, y = 130)
 
     frame2.mainloop()
+"""
