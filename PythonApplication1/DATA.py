@@ -35,7 +35,7 @@ def getName(id):
     with open(os.path.join(os.path.dirname(sys.argv[0]), 'UserInfo.json'), 'r+') as f:
         data1 = json.load(f)
         info = findByID(id)
-        return data1["users"][info]['name']
+        return data1["users"][info]["name"]
 
 
 def changeClockedStatus(id):
@@ -87,7 +87,18 @@ def changeMin(id, amount):
         f.seek(0)
         json.dump(data1,f)
         f.truncate()
-   
+  
+def checkCredentials(Id, passcode):
+    info = findByID(Id)
+    if(info != None):
+        with open(os.path.join(os.path.dirname(sys.argv[0]), 'UserInfo.json'), 'r+') as f:
+            data1 = json.load(f)
+            if data1["users"][info]["pin"] == passcode:
+                return 1
+            
+    return 0
+                
+
 
 def main():
     print(getClockedStatus(100001))
