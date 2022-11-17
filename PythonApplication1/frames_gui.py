@@ -7,7 +7,7 @@ import DATA
 from tkinter import ttk
 
 import function_01
-import PythonApplication1
+import PythonApplication1 as P1
 
 frame1 = True
 #frame1 
@@ -43,7 +43,7 @@ def openFrame1():
             if(DATA.checkCredentials((E1.get(1.0, "end-1c")) ,(E2.get(1.0, "end-1c")) ) == 1):
                 
                 print(1)
-                PythonApplication1.currentUserId = (E1.get(1.0, "end-1c"))
+                P1.currentUserId = (E1.get(1.0, "end-1c"))
                 frame1 = False
                 top.destroy()
                 openFrame1() 
@@ -76,26 +76,30 @@ def openFrame1():
         #frame1_user_name_input_area = Entry(frame1, width = 30).place(x = 110, y = 60) 
         #frame1_user_password_entry_area = Entry(frame1, width = 30).place(x = 110, y = 100) 
 
-        frame2_label = Label(top, text = "Hello " + DATA.getName(PythonApplication1.currentUserId))
+        frame2_label = Label(top, text = "Hello " + DATA.getName(P1.currentUserId))
         frame2_label.pack()
         frame2_label.place(relx=.5,rely=.1,anchor="center")
 
+        frame2_hours = Label(top,text = "Your total time worked is: " + str(DATA.calculateTime(P1.currentUserId)))
+        frame2_hours.pack()
+        frame2_hours.place(relx=.5,rely=.175,anchor="center")
+
         frame2_clock_in_button = ttk.Button(top, text = "\nClock In\n")
         frame2_clock_in_button.pack( ipadx=10, ipady = 10)
-        frame2_clock_in_button.place(relx=.4, rely=.3, anchor="center")
+        frame2_clock_in_button.place(relx=.4, rely=.375, anchor="center")
         
         frame2_clock_out_button = ttk.Button(top, text = "\nClock Out\n")
         frame2_clock_out_button.pack( ipadx=10, ipady = 50)
-        frame2_clock_out_button.place(relx=.6, rely=.3, anchor="center")
+        frame2_clock_out_button.place(relx=.6, rely=.375, anchor="center")
 
 
         frame2_30min_break_button = ttk.Button(top, text = "\n30 Minute\n    Break\n")
         frame2_30min_break_button.pack(ipadx=0, ipady = 50)
-        frame2_30min_break_button.place(relx=.6, rely=.575, anchor="center")
+        frame2_30min_break_button.place(relx=.6, rely=.65, anchor="center")
 
         frame2_15min_break_button = ttk.Button(top, text = "\n15 Minute\n    Break\n")
         frame2_15min_break_button.pack(ipadx=0, ipady = 50)
-        frame2_15min_break_button.place(relx=.4, rely=.575, anchor="center")
+        frame2_15min_break_button.place(relx=.4, rely=.65, anchor="center")
         
         def changeScreen():
             global frame1
@@ -105,6 +109,6 @@ def openFrame1():
 
         QuitButton = ttk.Button(top, text ="Log Out", command=lambda: changeScreen())
         QuitButton.pack( ipadx=10, ipady = 10)
-        QuitButton.place(relx=.5, rely=.8, anchor="center")
+        QuitButton.place(relx=.5, rely=.875, anchor="center")
 
     top.mainloop()

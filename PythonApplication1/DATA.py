@@ -51,7 +51,14 @@ def changeClockedStatus(id):
         json.dump(data1,f)
         f.truncate()
         
-
+def calculateTime(id):
+    min = getTotalMinutes(id)
+    h = (int)(min / 60)
+    min = min % 60
+    if min < 10:
+        return str(h) + ":0" + str(min)
+    else:
+        return str(h) + ":" + str(min)
     
 def changeHourBreak(id):
     info = findByID(id)
